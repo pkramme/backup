@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
      {
           filecopy target1(argv[2], argv[1]);
           std::cout << "TARGET ASSIGNED" << std::endl;
+          target1.filecopy_worker();
           std::cout << "EXECUTE FILEWORKER" << std::endl;
      }
      return 0;
