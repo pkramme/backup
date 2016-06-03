@@ -14,8 +14,8 @@ public:
      void filecopy_worker()
      {
           std::cout << "FILECOPY PROCESS STARTED" << std::endl;
-          std::ifstream source(src_path);
-          std::ofstream dest(dest_path); //dest_path HAS TO BE REPLACED BY SOCKET BUFFER
+          std::ifstream source(src_path, std::ios::binary);
+          std::ofstream dest(dest_path, std::ios::binary); //dest_path HAS TO BE REPLACED BY SOCKET BUFFER
           dest << source.rdbuf();
           source.close();
           dest.close();
