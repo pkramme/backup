@@ -8,3 +8,4 @@
 * Machine creation tools -> One device will serve as master device and all other devices will be created from this one
 * Server support with web user interface -> suited for enterprises
 * Function to overwatch which files are changing
+* Using Python3 for maximum platform compability
