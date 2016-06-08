@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import os
 import sys
+import socket
+import shutil
 
-print("THIS IS THE CLIENT SERVER!")
-if sys.argc == 1:
-    print("YOU DIDN'T GIVE ANY ARGS")
-elif sys.argc == 2:
-    print(sys.argv[1])
-elif sys.argc == 3:
-    print(sys.argv[1], sys.argv[2])
+print("CLIENT BACKUP SOFTWARE")
+src = sys.argv[1]
+ip = sys.argv[2]
+dest = sys.argv[3]
+shutil.copytree(src, dest, symlinks = False, ignore = None)
