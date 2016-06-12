@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
           {
                if(is_regular_file(source_path) == true)
                {
-                    copy_file(source_path, destination_path);
+                    copy_file(source_path, destination_path); //Link dest path to buffer
                     std::cout << "File has been copied" << std::endl;
                }
                else if(is_directory(source_path) == true)
