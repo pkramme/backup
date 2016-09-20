@@ -1,4 +1,4 @@
 all:
-	gcc -Wall -ansi -Wpedantic src/main.c -o build/server
+	gcc -Wall -ansi -Wpedantic src/main.c -o build/backupserver
 clean:
-	rm build/server
+	rm build/backupserver
