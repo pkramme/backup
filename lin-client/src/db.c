@@ -3,7 +3,7 @@
 int write_to_database(char write[256])
 {
 	FILE *database;
-	database = fopen("/home/paul/backupdatabase.csv", "a+");
+	database = fopen("backupdatabase.csv", "a+");
 	fprintf(database, "location,sha,server\n");
 	
 	fclose(database);
