@@ -1,6 +1,6 @@
 # BACKUP TOOL
->This tool is created because of the lack of a properly working
->Backup system on most Linux and all Windows machines.
+>This tool is created because of the lack of properly working
+>Backup systems on most Linux and all Windows machines.
 
 ## Features
 * Block system -> Blocks of files can be created and individually be backed up or reloaded. This should include OS.
