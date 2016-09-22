@@ -1,6 +1,11 @@
 #include"db.h"
 
-int write_to_database(char write[256])
+struct database
+{
+	int create_database(char path[256]);
+};
+	
+int create_database(char write[256])
 {
 	FILE *database;
 	database = fopen("backupdatabase.csv", "a+");
