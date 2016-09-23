@@ -1,4 +1,4 @@
-static char startmessage[] = "Linux Backup Client";
+static char startmessage[] = "Linux Backup Client by Paul Kramme";
 #include<stdio.h>
 #include<string.h>
 #include"db.h"
@@ -21,10 +21,11 @@ int main(int argc, char *argv[])
 		}
 		else if(strcmp(argv[argindex], "create") == 0)
 		{
-			if(create_database("backupdatabase"))
+			if(create_database(argv[argindex + 1]))
 			{
 				puts("Possible write error.");
 			}
+			++argindex;
 		}
 		else
 		{
