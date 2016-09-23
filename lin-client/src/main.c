@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 			puts("This should create a new block");
 			printf("Creating new block with name '%s'\n", argv[argindex + 1]);
 			++argindex;
+			write_database(argv[argindex + 1]);
 		}
 		else if(strcmp(argv[argindex], "create") == 0)
 		{
