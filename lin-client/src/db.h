@@ -3,6 +3,7 @@
 
 #include<stdio.h>
 
-int write_to_database(char write[256]);
+int create_database(char path[256]);
+int write_database(char write[256]);
 
 #endif

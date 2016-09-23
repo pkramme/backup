@@ -5,30 +5,30 @@ static char startmessage[] = "Linux Backup Client";
 
 int main(int argc, char *argv[])
 {
-	int argiterator = 0;
+	int argindex = 0;
 	puts(startmessage);
-	for(argiterator = 1; argiterator < argc; argiterator++)
+	for(argindex = 1; argindex < argc; argindex++)
 	{
-		if(strcmp(argv[argiterator], "version") == 0)
+		if(strcmp(argv[argindex], "version") == 0)
 		{
 			puts("This should display version");
 		}
-		else if(strcmp(argv[argiterator], "new") == 0)
+		else if(strcmp(argv[argindex], "new") == 0)
 		{
 			puts("This should create a new block");
-			printf("Creating new block with name '%s'\n", argv[argiterator + 1]);
-			++argiterator;
+			printf("Creating new block with name '%s'\n", argv[argindex + 1]);
+			++argindex;
 		}
-		else if(strcmp(argv[argiterator], "create") == 0)
+		else if(strcmp(argv[argindex], "create") == 0)
 		{
-			if(write_to_database("wheeeethisisnotdoinganything"))
+			if(create_database("backupdatabase"))
 			{
 				puts("PROBLEM!");
 			}
 		}
 		else
 		{
-			printf("Command '%s' not regognized\n", argv[argiterator]);
+			printf("Command '%s' not regognized\n", argv[argindex]);
 		}
 	}
 	return 0;
