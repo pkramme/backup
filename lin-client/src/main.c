@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		{
 			if(create_database("backupdatabase"))
 			{
-				puts("PROBLEM!");
+				puts("Possible write error.");
 			}
 		}
 		else
