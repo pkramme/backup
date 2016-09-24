@@ -5,8 +5,6 @@ static char startmessage[] = "Linux Backup Client";
 
 int main(int argc, char **argv)
 {
-	THIS WILL BREAK THE BUILD!
-	THIS WILL BREAK THE BUILD AGAIN!
 	int argindex = 0;
 	puts(startmessage);
 	for(argindex = 1; argindex < argc; argindex++)
