@@ -1,4 +1,4 @@
-static char startmessage[] = "Linux Backup Client by Paul Kramme";
+static char startmessage[] = "Linux Backup Client";
 #include<stdio.h>
 #include<string.h>
 #include"db.h"
