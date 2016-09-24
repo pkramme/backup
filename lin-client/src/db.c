@@ -12,7 +12,7 @@ int create_database(char path[256])
 int write_database(char write[256])
 {
 	FILE *database;
-	database = fopen(/*where can i find the database?*/"backupdatabase", "w");
+	database = fopen("backupdatabase", "w");
 	fclose(database);
 	return 0;
 }
