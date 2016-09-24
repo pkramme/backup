@@ -3,7 +3,7 @@ static char startmessage[] = "Linux Backup Client by Paul Kramme";
 #include<string.h>
 #include"db.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int argindex = 0;
 	puts(startmessage);
