@@ -1,4 +1,4 @@
-static char version[] = "btsoot 0.1.0"
+static char version[] = "btsoot 0.1.0";
 static char startmessage[] = "Linux Backup Client";
 #include<stdio.h>
 #include<string.h>
@@ -7,7 +7,7 @@ static char startmessage[] = "Linux Backup Client";
 int main(int argc, char **argv)
 {
 	int argindex = 0;
-	puts(startmessage);
+	printf("%s", startmessage);
 	for(argindex = 1; argindex < argc; argindex++)
 	{
 		if(strcmp(argv[argindex], "version") == 0)
