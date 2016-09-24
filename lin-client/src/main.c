@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 	{
 		if(strcmp(argv[argindex], "version") == 0)
 		{
-			puts("This should display version");
+			printf("%s", version);
 		}
 		else if(strcmp(argv[argindex], "new") == 0)
 		{
