@@ -1,5 +1,5 @@
 static char version[] = "btsoot 0.1.0";
-static char startmessage[] = "BTSOOT";
+static char startmessage[] = "BTSOOT\n";
 #include<stdio.h>
 #include<string.h>
 #include<unistd.h>
@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 	int argindex = 0;
 	int create_conf_file = 0;
 	printf("%s", startmessage);
-	if(argc > 1)
+	if(argc >= 2)
 	{
 		for(argindex = 1; argindex < argc; argindex++)
 		{
@@ -41,27 +41,30 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	puts("You started BTSOOT without arguments.");
-	if(access("btsoot.conf", F_OK) != -1)
-	{
-		puts("Configfile found!");
-	}
 	else
 	{
-		puts("It seems like this is the first start.");
-		puts("Shall i create a config file? (Y/n)");
-		create_conf_file = getch();
-		switch(create_conf_file)
+		puts("You started BTSOOT without arguments.");
+		if(access("btsoot.conf", F_OK) != -1)
 		{
-			case 'n':
-				puts("I will NOT create a config file.");
-				puts("You should create one by yourself.");
-				return 1;
-			default:
-				puts("Proceeding to create config file.");
-				/*config file creator.*/
+			puts("Configfile found!");
 		}
-	}	
+		else
+		{
+			puts("It seems like this is the first start.");
+			puts("Shall i create a config file? (Y/n)");
+			create_conf_file = getch();
+			switch(create_conf_file)
+			{
+				case 'n':
+					puts("I will NOT create a config file.");
+					puts("You should create one by yourself.");
+					return 1;
+				default:
+					puts("Proceeding to create config file.");
+					/*config file creator.*/
+			}
+		}
+	}
 	return 0;
 }
 
