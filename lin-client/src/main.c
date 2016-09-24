@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		{
 			if(create_database(argv[argindex + 1]))
 			{
-				puts("Possible write error.");
+				puts("Cannot open file.");
 			}
 			++argindex;
 		}
