@@ -1,3 +1,4 @@
+static char version[] = "btsoot 0.1.0"
 static char startmessage[] = "Linux Backup Client";
 #include<stdio.h>
 #include<string.h>
