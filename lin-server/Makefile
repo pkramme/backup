@@ -1,4 +1,4 @@
 all:
-	gcc -Wall -ansi -Wpedantic src/main.c -o build/backupserver
+	gcc -Wall -ansi -Wpedantic src/main.c -o build/btsoot-server
 clean:
-	rm build/backupserver
+	rm build/btsoot-server
