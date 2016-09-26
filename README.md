@@ -1,2 +1,2 @@
 # BTSOOT
-BTSOOT stands for Backup the shit out of this and is a new backup system.
+BTSOOT is a backup system aimed to backup folders to a server.
