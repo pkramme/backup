@@ -6,7 +6,7 @@ static char startmessage[] = "BTSOOT\n";
 
 #include"db.h"
 #include"getch/getch.h"
-
+#include"configfile.h"
 int main(int argc, char **argv)
 {
 	int argindex = 0;
@@ -34,6 +34,11 @@ int main(int argc, char **argv)
 					puts("Cannot open file.");
 				}
 				++argindex;
+			}
+			else if(strcmp(argv[argindex], "create_conf") == 0)
+			{
+				puts("Command launched.");
+				create_configfile("Wheeee");
 			}
 			else
 			{
