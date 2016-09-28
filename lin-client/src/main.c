@@ -11,7 +11,9 @@ int main(int argc, char **argv)
 {
 	int argindex = 0;
 	int create_conf_file = 0;
+	/*
 	printf("%s", startmessage);
+	*/
 	if(argc >= 2)
 	{
 		for(argindex = 1; argindex < argc; argindex++)
