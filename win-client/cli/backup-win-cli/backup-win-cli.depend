@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1474468341 source:c:\users\paul9\documents\github\backup\win-client\cli\backup-win-cli\main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-
