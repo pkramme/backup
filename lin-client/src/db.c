@@ -31,4 +31,5 @@ int create_database_new(char path[256])
 	write(fd, buffer, "path,server");
 	return 0;
 }	
-#endif	
+#endif
+
