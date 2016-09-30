@@ -6,6 +6,7 @@ static char version[] = "btsoot 0.1.0";
 #include"db.h"
 #include"getch/getch.h"
 #include"configfile.h"
+
 int main(int argc, char **argv)
 {
 	int argindex = 0;
@@ -25,18 +26,48 @@ int main(int argc, char **argv)
 				++argindex;
 				write_database(argv[argindex + 1]);
 			}
-			else if(strcmp(argv[argindex], "create") == 0)
+			else if(strcmp(argv[argindex], "create_database") == 0)
 			{
-				if(create_database(argv[argindex + 1]))
+				if(argv[argindex + 1] == NULL)
 				{
-					puts("Cannot open file.");
+					puts("You didn't name a file name.");
+					puts("I'm assuming you want to use default name");
+					if(create_database("btsoot_database"))
+					{
+						puts("Cannot open file.");
+					}
+					return 1;
 				}
-				++argindex;
+				else
+				{
+					if(create_database(argv[argindex + 1]))
+					{
+						puts("Cannot open file.");
+					}
+					++argindex;
+				}
 			}
-			else if(strcmp(argv[argindex], "create_conf") == 0)
+			else if(strcmp(argv[argindex], "create_config") == 0)
 			{
-				puts("Command launched.");
-				create_configfile("Wheeee");
+				if(access("btsoot.conf", F_OK) != -1)
+				{
+					puts("There is a config file.");
+					puts("Do you want to override it?");
+					switch(getch())
+					{
+						case 'y':
+							puts("Overriding configfile.");
+							create_configfile(NULL);
+						default:
+							puts("Aborting");
+							return 0;
+					}
+				}
+				else
+				{
+					puts("Creating config file");
+					create_configfile("Wheeee");
+				}
 			}
 			else
 			{
