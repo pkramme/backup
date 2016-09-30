@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 					return 1;
 				default:
 					puts("Proceeding to create config file.");
-					/*config file creator.*/
+					create_configfile("wheeeithinkthishasanarg");
 			}
 		}
 	}
