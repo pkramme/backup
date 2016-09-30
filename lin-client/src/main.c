@@ -1,5 +1,4 @@
 static char version[] = "btsoot 0.1.0";
-static char startmessage[] = "BTSOOT\n";
 #include<stdio.h>
 #include<string.h>
 #include<unistd.h>
