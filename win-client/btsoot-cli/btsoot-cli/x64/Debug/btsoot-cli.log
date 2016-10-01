@@ -1,0 +1,5 @@
+﻿  main.c
+c:\users\paul9\documents\github\backup\win-client\btsoot-cli\btsoot-cli\main.c(11): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'std::size_t'
+  c:\users\paul9\documents\github\backup\win-client\btsoot-cli\btsoot-cli\main.c(11): note: this argument is used as a buffer size
+  btsoot-cli.vcxproj -> C:\Users\paul9\Documents\GitHub\backup\win-client\btsoot-cli\x64\Debug\btsoot-cli.exe
+  btsoot-cli.vcxproj -> C:\Users\paul9\Documents\GitHub\backup\win-client\btsoot-cli\x64\Debug\btsoot-cli.pdb (Partial PDB)

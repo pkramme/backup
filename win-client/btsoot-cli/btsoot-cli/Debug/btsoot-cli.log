@@ -1,0 +1,7 @@
+﻿  main.c
+c:\users\paul9\documents\github\backup\win-client\btsoot-cli\btsoot-cli\main.c(11): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  c:\users\paul9\documents\github\backup\win-client\btsoot-cli\btsoot-cli\main.c(11): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  c:\users\paul9\documents\github\backup\win-client\btsoot-cli\btsoot-cli\main.c(11): note: the missing variadic argument 2 is required by format string '%s'
+  c:\users\paul9\documents\github\backup\win-client\btsoot-cli\btsoot-cli\main.c(11): note: this argument is used as a buffer size
+  btsoot-cli.vcxproj -> C:\Users\paul9\Documents\GitHub\backup\win-client\btsoot-cli\Debug\btsoot-cli.exe
+  btsoot-cli.vcxproj -> C:\Users\paul9\Documents\GitHub\backup\win-client\btsoot-cli\Debug\btsoot-cli.pdb (Partial PDB)
