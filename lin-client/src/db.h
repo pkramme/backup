@@ -5,6 +5,7 @@
 #include<fcntl.h>
 #include<sys/stat.h>
 #include<unistd.h>
+#include<string.h>
 
 int create_database(char path[256]);
 int write_database(char write[256]);
