@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 				{
 					puts("You didn't name a file name.");
 					puts("Using default name: 'btsoot_database'");
-					if(create_database("btsoot_database"))
+					if(create_database_new("btsoot_database"))
 					{
 						puts("Cannot open file.");
 					}
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 				}
 				else
 				{
-					if(create_database(argv[argindex + 1]))
+					if(create_database_new(argv[argindex + 1]))
 					{
 						puts("Cannot open file.");
 					}

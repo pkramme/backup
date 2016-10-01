@@ -21,14 +21,14 @@ int write_database(char write[256])
 int create_database_new(char path[256])
 {
 	int fd;
-	char buffer[1024]; /*BUFSIZ*/
+	char buffer[1024] = "path,server"; /*BUFSIZ*/
 	/*int creat(char *name, int perms);*/
-	if(fd = creat("btsootdb", "0666") == -1)
+	if((fd = open("btsootdb", O_WRONLY|O_CREAT|O_TRUNC, S_IRUSR | S_IWUSR)) == -1)
 	{
 		puts("DATABASE CREATION FAIL.");
 		return 1;
 	}
-	write(fd, buffer, "path,server");
+	write(fd, buffer, 1024);
 	return 0;
 }	
 #endif
