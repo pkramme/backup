@@ -17,7 +17,6 @@ int write_database(char write[256])
 	return 0;
 }
 
-#ifdef ALTERNATIVE
 int create_database_new(char path[256])
 {
 	int fd;
@@ -31,5 +30,4 @@ int create_database_new(char path[256])
 	write(fd, buffer, strlen(buffer));
 	return 0;
 }	
-#endif
 

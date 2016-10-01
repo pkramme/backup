@@ -9,5 +9,6 @@
 
 int create_database(char path[256]);
 int write_database(char write[256]);
+int create_database_new(char path[256]);
 
 #endif
