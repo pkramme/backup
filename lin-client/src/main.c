@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 				if(argv[argindex + 1] == NULL)
 				{
 					puts("You didn't name a file name.");
-					puts("I'm assuming you want to use default name");
+					puts("Using default name: 'btsoot_database'");
 					if(create_database("btsoot_database"))
 					{
 						puts("Cannot open file.");
