@@ -69,6 +69,14 @@ int main(int argc, char **argv)
 					create_configfile("Wheeee");
 				}
 			}
+			else if(strcmp(argv[argindex], "help") == 0)
+			{
+				printf("USAGE: %s command\n", argv[0]);
+				puts("create_config");
+				puts("create_database");
+				puts("new");
+				puts("version");
+			}
 			else
 			{
 				printf("Command '%s' not regognized\n", argv[argindex]);
